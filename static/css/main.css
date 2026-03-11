@@ -1,7 +1,3 @@
-.imgpng {
-    align-self: center;
-}
-
-.No_img {
-    align-self: center;
+#No_img {
+    text-align: center;
 }
