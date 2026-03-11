@@ -16,4 +16,4 @@ def init_database():
 
 def create_session():
     global Session
-    return Session
+    return Session()
