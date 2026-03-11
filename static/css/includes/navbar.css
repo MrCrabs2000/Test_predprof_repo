@@ -1,0 +1,11 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding: 8px;
+    margin: auto;
+    margin-top: 16px;
+    border-radius: var(--border-radius);
+    background: var(--bg);
+    box-shadow: var(--shadow);
+}

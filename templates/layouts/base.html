@@ -20,15 +20,16 @@
         }
     </style>
     {% block head %}
-        
+        <link rel="stylesheet" href="/static/css/includes/navbar.css">
     {% endblock %}
 </head>
 <body>
     <div class="wrapper">
-        {% include 'includes/header.html' %}
+        {% include 'includes/modules_sidebar.html' %}
+        {% include 'includes/navbar.html' %}
         <div class="content">
             {% block content %}
-            
+
             {% endblock %}
         </div>
     </div>
