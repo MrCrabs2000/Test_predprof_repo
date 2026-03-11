@@ -21,16 +21,23 @@ def check_relation(coords: list[int] = None, type='listener'):
 def higher_points(highers: list[list[int]] = None):
     mx = 0
     highers_ls = []
+    y = 0
+
     for points in highers:
         if max(points) > mx:
             mx = max(points)
 
     for points in highers:
+        y += 1
+        x = 0
         for point in points:
+            x += 1
             if point == mx:
-                highers_ls.append(point)
+                point_data = {'status': False,
+                              'x': x,
+                              'y': y,
+                              'z': mx}
+                highers_ls.append(point_data)
 
     return highers_ls
-
-
 
