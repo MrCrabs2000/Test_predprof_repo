@@ -28,10 +28,12 @@
     <div class="wrapper">
         {% include 'includes/modules_sidebar.html' %}
         {% include 'includes/navbar.html' %}
-        <div class="content">
-            {% block content %}
-
-            {% endblock %}
+        <div id="imgdiv">
+            {% if img_path %}
+                <img src="{{img_path}}">
+            {% else %}
+                <p id="No_img">Нет картинки</p>
+            {% endif %}
         </div>
     </div>
 </body>
