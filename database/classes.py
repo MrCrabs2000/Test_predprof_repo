@@ -13,7 +13,7 @@ class Modules(table_base):
     id = Column(Integer, primary_key=True, nullable=False)
     type = Column(Integer, nullable=False)
     # amount = Column(Integer, nullable=False)
-    point = Column(Integer, ForeignKey('point.id'), nullable=False)
+    point = Column(Integer, ForeignKey('points.id'), nullable=False)
 
     module_point = relationship("Points", back_populates="point_module")
 

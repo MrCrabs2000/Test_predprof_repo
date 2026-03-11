@@ -9,7 +9,7 @@ def init_database():
     if Session:
         return
 
-    engine = create_engine('sqlite:///base/db/database.db', echo = False)  #  Здесь надо будет поменять путь до бд
+    engine = create_engine('sqlite:///db/database.db', echo = False)
     Session = sessionmaker(bind=engine)
     table_base.metadata.create_all(engine)
 
